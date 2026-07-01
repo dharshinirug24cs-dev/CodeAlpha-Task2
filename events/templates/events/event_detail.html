@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Details</title>
+</head>
+<body>
+
+<h1>{{ event.title }}</h1>
+
+<p><strong>Description:</strong> {{ event.description }}</p>
+
+<p><strong>Date:</strong> {{ event.date }}</p>
+
+<p><strong>Venue:</strong> {{ event.venue }}</p>
+
+<p><strong>Seats:</strong> {{ event.seats }}</p>
+
+<br>
+
+<a href="/events/{{ event.id }}/register/">
+    <button>Register</button>
+</a>
+
+<a href="/events/">⬅ Back to Event List</a>
+
+</body>
+</html>
